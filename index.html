@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <title>Meu primeiro site</title>
+   </head>
+   <body>
+      <main>
+         <h1 class="titulo" id="titulo_principal">
+            <strong>Mirador</strong>
+         </h1>
+         <h2 class="titulo">Sub-título</h2>
+
+         <p>
+            Parágrafo
+            <br>
+            <a href="http://www.mirador.org.br" target="_blank">
+               Link para o site oficial
+            </a>
+         </p>
+
+         <section id="imagens">
+            <img
+               src="https://imgs.search.brave.com/qj8gc1PLwxUYqvyAWhNsd7qGZWBvlIbFnmOessBYGSw/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9mYXN0/bHkuNHNxaS5uZXQv/aW1nL2dlbmVyYWwv/MjAweDIwMC83MzA2/MDE0OF9uWG1pTlhV/S0VPU3haSDlHYU9X/YlY0SHlFa2dnYTNr/b3JzMmFEM2FRWXZZ/LmpwZw"
+               alt="capela do centro cultural mirador"
+            >
+            <br>
+            <img 
+               src="./imagens/mirador.jpg"
+               alt="fachado do centro cultural mirador"
+               height="300px"
+            >
+         </section>
+      </main>
+      <footer>
+         <form method="post" action="/api/usuarios">
+            <fieldset>
+               <label for="nome">Nome: </label>
+               <input type="text" name="nome" id="nome" minlength="3" maxlength="30">
+               <br>
+               <label for="senha">Senha: </label>
+               <input type="password" name="senha" id="senha">
+               <br>
+               <label for="email">Email: </label>
+               <input type="email" name="email" id="email">
+               <br>
+               <label for="nascimento">Data de nascimento: </label>
+               <input type="date" name="nascimento" id="nascimento">
+               <br>
+               <input type="radio" name="sexo" id="masculino">
+               <label for="masculino">Masculino</label>
+   
+               <input type="radio" name="sexo" id="feminino">
+               <label for="feminino">Feminino</label>
+               <br>
+               <input type="checkbox" name="tecnologia" id="frontend" checked>
+               <label for="frontend">Frontend</label>
+   
+               <input type="checkbox" name="tecnologia" id="backend">
+               <label for="backend">Backend</label>
+   
+               <input type="checkbox" name="tecnologia" id="infra">
+               <label for="infra">Infra</label>
+               <br>
+               <input type="submit" value="Enviar">
+            </fieldset>
+         </form>
+      </footer>
+   </body>
+</html>
